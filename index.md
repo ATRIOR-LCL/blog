@@ -3,16 +3,17 @@
 layout: home
 
 hero:
-  name: "我的个人博客网站"
-  text: "My blog website"
-  tagline: NO EFFORT GOES IN VAIN
+  name: "魔法驿站"
+  text: "Painting the World"
+  tagline: |
+    NO EFFORT GOES IN VAIN
   image:
     src: /bac.webp
     alt: 背景图
   actions:
     - theme: brand
-      text: Explore Me!!!
-      link: /markdown-examples
+      text: 开始探索！这份尘封已久的回忆！
+      link: /about
     - theme: alt
       text: API 示例
       link: /api-examples

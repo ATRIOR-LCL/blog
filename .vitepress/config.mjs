@@ -14,7 +14,6 @@ export default defineConfig({
   ],
   title: "ATRIOR's Magic Blog!!!",
   description: "A VitePress Site",
-
   themeConfig: {
     outlineTitle: "文章目录",
     outline: [2, 6],
@@ -25,35 +24,59 @@ export default defineConfig({
         text: "About Me",
         items: [
           {
-            text: "Home",
-            link: "/",
+            text: "关于本博客",
+            link: "/about/关于本博客",
           },
           {
-            text: "markdown",
-            link: "/markdown-examples",
+            text: "我的爱好",
+            link: "/about/我的爱好",
+          },
+          {
+            text: "学习历程",
+            link: "/about/学习历程",
           },
         ],
       },
       {
         text: "项目合集",
         items: [
+          { text: "CodeForces 选手/比赛 信息爬虫", link: "/" },
           { text: "SDUTOJ 2024 年度报告", link: "/" },
           { text: "SDUT 新生导游程序", link: "/" },
           { text: "蔚蓝系列赛Round2.5：崩铁主题赛", link: "/" },
+          { text: "SDUTACM首页 2.0", link: "/" },
         ],
       },
-      { text: "前端", link: "/frontend/react/" },
-      { text: "后端", link: "/backend/python/" },
+      {
+        text: "前端",
+        items: [
+          { text: "vue", link: "/frontend/vue/" },
+          { text: "react", link: "/frontend/react/" },
+          { text: "事件循环", link: "/frontend/eventloop/" },
+          { text: "ES6", link: "/frontend/es6/" },
+        ],
+      },
+      {
+        text: "后端",
+        items: [
+          { text: "node", link: "/backend/node/" },
+          { text: "python", link: "/backend/python/" },
+          { text: "SQL", link: "/backend/sql/" },
+        ],
+      },
+      {
+        text: "算法",
+        items: [],
+      },
     ],
-
     sidebar: {
-      "/frontend/react/": set_sidebar("/frontend/react"),
-      "/backend/python/": set_sidebar("/backend/python"),
+      "/frontend/": set_sidebar("/frontend"),
+      "/backend/": set_sidebar("/backend"),
+      "/about/": set_sidebar("/about"),
     },
-
     socialLinks: [{ icon: "github", link: "https://github.com/ATRIOR-LCL" }],
     footer: {
-      copyright: "Copyright © 2023-present ATRIOR'S Magic Blog",
+      copyright: "Copyright © 2025-present ATRIOR'S Magic Blog ❤️",
     },
     // 设置搜索框的样式
     search: {
