@@ -68,16 +68,37 @@ export default defineConfig({
         text: "算法",
         items: [],
       },
+      {
+        text:'网络',
+        items:[
+          {text: 'HTTP协议', link: '/network/http'},
+        ]
+      }
     ],
     sidebar: {
       "/frontend/vue/": set_sidebar("/frontend/vue"),
       "/frontend/react/": set_sidebar("/frontend/react"),
       "/frontend/eventloop/": set_sidebar("/frontend/eventloop"),
-      "/frontend/es6/": set_sidebar("/frontend/es6"),
+      "/frontend/es6": set_sidebar("/frontend/es6"),
       "/backend/sql/": set_sidebar("/backend/sql"),
       "/backend/node/": set_sidebar("/backend/node"),
       "/backend/python/": set_sidebar("/backend/python"),
-      "/about/": set_sidebar("/about"),
+      "/network/http/": set_sidebar("/network/http"),
+      // "/about/": set_sidebar("/about"),
+      '/about/':[
+        {
+          text: 'About Me',
+          items:[
+            {
+              text: '关于我',
+              link: '/about/about-me'
+            },
+            {
+              text: ''
+            }
+          ]
+        }
+      ]
     },
     socialLinks: [{ icon: "github", link: "https://github.com/ATRIOR-LCL" }],
     footer: {

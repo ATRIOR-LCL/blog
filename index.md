@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -22,7 +21,7 @@ features:
   - title: Favorate 😋
     details: 二次元 / 历史 / 设计
   - title: Focus 🎯
-    details: 全栈开发 / 运维
+    details: 全栈开发 / 运维 / 爬虫
   - title: Group 🍀
     details: SDUTACM / SDUTNEWS
 ---
