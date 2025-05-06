@@ -21,6 +21,19 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
+        text:"党员笔记",
+        items:[
+          {
+            text: "基础知识",
+            link: "/party/basic",
+          },
+          {
+            text: "主观论证",
+            link: "/party/subjective"
+          }
+        ]
+      },
+      {
         text: "About Me",
         items: [
           {
