@@ -97,6 +97,8 @@ export default defineConfig({
       "/backend/node/": set_sidebar("/backend/node"),
       "/backend/python/": set_sidebar("/backend/python"),
       "/network/http/": set_sidebar("/network/http"),
+      "/party/basic/": set_sidebar("/party/basic"),
+      "party/subjective/": set_sidebar("/party/subjective"),
       // "/about/": set_sidebar("/about"),
       '/about/':[
         {
