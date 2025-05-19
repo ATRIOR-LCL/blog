@@ -21,33 +21,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
-        text:"党员笔记",
-        items:[
-          {
-            text: "基础知识",
-            link: "/party/basic",
-          },
-          {
-            text: "主观论证",
-            link: "/party/subjective"
-          }
-        ]
+        text: "学习笔记",
+        items: [
+          { text: "党员基础知识", link: "/party/basic/" },
+          { text: "操作系统", link: "/os/" },
+        ],
       },
       {
         text: "About Me",
         items: [
-          {
-            text: "关于本博客",
-            link: "/about/关于本博客",
-          },
-          {
-            text: "我的爱好",
-            link: "/about/我的爱好",
-          },
-          {
-            text: "学习历程",
-            link: "/about/学习历程",
-          },
+          { text: "关于本博客", link: "/about/关于本博客" },
+          { text: "我的爱好", link: "/about/我的爱好" },
+          { text: "学习历程", link: "/about/学习历程" },
         ],
       },
       {
@@ -82,11 +67,9 @@ export default defineConfig({
         items: [],
       },
       {
-        text:'网络',
-        items:[
-          {text: 'HTTP协议', link: '/network/http'},
-        ]
-      }
+        text: "网络",
+        items: [{ text: "HTTP协议", link: "/network/http" }],
+      },
     ],
     sidebar: {
       "/frontend/vue/": set_sidebar("/frontend/vue"),
@@ -97,23 +80,50 @@ export default defineConfig({
       "/backend/node/": set_sidebar("/backend/node"),
       "/backend/python/": set_sidebar("/backend/python"),
       "/network/http/": set_sidebar("/network/http"),
-      "/party/basic/": set_sidebar("/party/basic"),
-      "party/subjective/": set_sidebar("/party/subjective"),
-      // "/about/": set_sidebar("/about"),
-      '/about/':[
+      // "/party/basic/": set_sidebar("/party/basic"),
+      "/party/": [
         {
-          text: 'About Me',
-          items:[
+          text: "学习笔记",
+          items: [
+            {text: "引言",link: "/party/",},
             {
-              text: '关于我',
-              link: '/about/about-me'
+              text: "党员基础知识",
+              link: "/party/basic/",
+              items: [
+                { text: "基本概念", link: "/party/basic/M0基本概念" },
+                { text: "党员", link: "/party/basic/M1党员" },
+                { text: "党建", link: "/party/basic/M2党建" },
+                { text: "入党", link: "/party/basic/M3入党" },
+              ],
+            },
+          ],
+        },
+      ],
+      "/os/": [
+        {
+          text: "引言",
+          link: "/os/",
+          items: [
+            { text: "第一章", link: "/os/C1/" },
+            { text: "第二章", link: "/os/C2/" },
+            { text: "第三章", link: "/os/C3/" },
+          ],
+        },
+      ],
+      "/about/": [
+        {
+          text: "About Me",
+          items: [
+            {
+              text: "关于我",
+              link: "/about/about-me",
             },
             {
-              text: ''
-            }
-          ]
-        }
-      ]
+              text: "",
+            },
+          ],
+        },
+      ],
     },
     socialLinks: [{ icon: "github", link: "https://github.com/ATRIOR-LCL" }],
     footer: {
