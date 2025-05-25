@@ -111,6 +111,7 @@ export default defineConfig({
             { text: "第五章", link: "/os/C5/" },
             { text: "第六章", link: "/os/C6/" },
             { text: "基础算法", link: "/os/C7/" },
+            { text: "课程设计", link: "/os/C8/" },
           ],
         },
       ],
