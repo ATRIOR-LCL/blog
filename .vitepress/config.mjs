@@ -41,6 +41,7 @@ export default defineConfig({
           { text: "CodeForces 选手/比赛 信息爬虫", link: "/" },
           { text: "SDUTOJ 2024 年度报告", link: "/" },
           { text: "SDUT 新生导游程序", link: "/" },
+          {text: "OJ3 压力测试脚本", link: "/project/OJ3StressTesting/"},
           { text: "蔚蓝系列赛Round2.5：崩铁主题赛", link: "/" },
           { text: "SDUTACM首页 2.0", link: "/" },
         ],
@@ -80,7 +81,6 @@ export default defineConfig({
       "/backend/node/": set_sidebar("/backend/node"),
       "/backend/python/": set_sidebar("/backend/python"),
       "/network/http/": set_sidebar("/network/http"),
-      // "/party/basic/": set_sidebar("/party/basic"),
       "/party/": [
         {
           text: "学习笔记",
@@ -98,6 +98,15 @@ export default defineConfig({
             },
           ],
         },
+      ],
+      "/project/": [
+        {
+          text: "项目合集",
+          link: "/project/",
+          items: [
+            {text: 'OJ3 压力测试脚本', link: '/project/OJ3StressTesting/'},
+          ]
+        }
       ],
       "/os/": [
         {
