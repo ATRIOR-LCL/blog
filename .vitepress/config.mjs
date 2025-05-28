@@ -61,6 +61,7 @@ export default defineConfig({
           { text: "node", link: "/backend/node/" },
           { text: "python", link: "/backend/python/" },
           { text: "SQL", link: "/backend/sql/" },
+          { text: "Nest", link: "/backend/nest/" },
         ],
       },
       {
@@ -137,6 +138,17 @@ export default defineConfig({
             },
           ],
         },
+      ],
+      "/backend/nest/": [
+        {
+          test: "Nest",
+          link: "/backend/nest/",
+          items: [
+            {text: "前置知识", link: "/backend/nest/C1/"},
+            {text: "Nest 脚手架(CLI)", link: "/backend/nest/C2/"},
+            {text: "Nest 控制器(Controller)", link: "/backend/nest/C3/"},
+          ]
+        }
       ],
     },
     socialLinks: [{ icon: "github", link: "https://github.com/ATRIOR-LCL" }],
