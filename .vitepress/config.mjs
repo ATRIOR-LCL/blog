@@ -41,7 +41,7 @@ export default defineConfig({
           { text: "CodeForces 选手/比赛 信息爬虫", link: "/" },
           { text: "SDUTOJ 2024 年度报告", link: "/" },
           { text: "SDUT 新生导游程序", link: "/" },
-          {text: "OJ3 压力测试脚本", link: "/project/OJ3StressTesting/"},
+          { text: "OJ3 压力测试脚本", link: "/project/OJ3StressTesting/" },
           { text: "蔚蓝系列赛Round2.5：崩铁主题赛", link: "/" },
           { text: "SDUTACM首页 2.0", link: "/" },
         ],
@@ -86,7 +86,7 @@ export default defineConfig({
         {
           text: "学习笔记",
           items: [
-            {text: "引言",link: "/party/",},
+            { text: "引言", link: "/party/", },
             {
               text: "党员基础知识",
               link: "/party/basic/",
@@ -105,7 +105,7 @@ export default defineConfig({
           text: "项目合集",
           link: "/project/",
           items: [
-            {text: 'OJ3 压力测试脚本', link: '/project/OJ3StressTesting/'},
+            { text: 'OJ3 压力测试脚本', link: '/project/OJ3StressTesting/' },
           ]
         }
       ],
@@ -144,9 +144,11 @@ export default defineConfig({
           test: "Nest",
           link: "/backend/nest/",
           items: [
-            {text: "前置知识", link: "/backend/nest/C1/"},
-            {text: "Nest 脚手架(CLI)", link: "/backend/nest/C2/"},
-            {text: "Nest 控制器(Controller)", link: "/backend/nest/C3/"},
+            { text: "前置知识", link: "/backend/nest/C1/" },
+            { text: "Nest 脚手架(CLI)", link: "/backend/nest/C2/" },
+            { text: "Nest 控制器(Controller)", link: "/backend/nest/C3/" },
+            { text: "Nest Session 案例", link: "/backend/nest/C4/" },
+            { text: "Nest Providers", link: "/backend/nest/C5/" },
           ]
         }
       ],
