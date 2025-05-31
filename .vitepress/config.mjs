@@ -149,6 +149,7 @@ export default defineConfig({
             { text: "Nest 控制器(Controller)", link: "/backend/nest/C3/" },
             { text: "Nest Session 案例", link: "/backend/nest/C4/" },
             { text: "Nest Providers", link: "/backend/nest/C5/" },
+            { text: "Nest Module", link: "/backend/nest/C6/" },
           ]
         }
       ],
