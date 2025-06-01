@@ -49,8 +49,8 @@ export default defineConfig({
       {
         text: "前端",
         items: [
-          { text: "vue", link: "/frontend/vue/" },
           { text: "react", link: "/frontend/react/" },
+          { text: "vue", link: "/frontend/vue/" },
           { text: "事件循环", link: "/frontend/eventloop/" },
           { text: "ES6", link: "/frontend/es6/" },
         ],
@@ -59,7 +59,6 @@ export default defineConfig({
         text: "后端",
         items: [
           { text: "node", link: "/backend/node/" },
-          { text: "python", link: "/backend/python/" },
           { text: "SQL", link: "/backend/sql/" },
           { text: "Nest", link: "/backend/nest/" },
         ],
@@ -75,7 +74,16 @@ export default defineConfig({
     ],
     sidebar: {
       "/frontend/vue/": set_sidebar("/frontend/vue"),
-      "/frontend/react/": set_sidebar("/frontend/react"),
+      "/frontend/react/": [
+        {
+          text: "React",
+          link: "/frontend/react/",
+          items: [
+            { text: "JSX", link: "/frontend/react/C1/" },
+            { text: "虚拟DOM", link: "/frontend/react/C1/" },
+          ],
+        }
+      ],
       "/frontend/eventloop/": set_sidebar("/frontend/eventloop"),
       "/frontend/es6": set_sidebar("/frontend/es6"),
       "/backend/sql/": set_sidebar("/backend/sql"),
