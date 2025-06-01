@@ -69,27 +69,81 @@ export default defineConfig({
       },
       {
         text: "网络",
-        items: [{ text: "HTTP协议", link: "/network/http" }],
+        items: [{ text: "HTTP协议", link: "/network/http/" },
+        { text: "TCP/IP协议", link: "/network/tcpip/" }
+        ],
       },
     ],
     sidebar: {
-      "/frontend/vue/": set_sidebar("/frontend/vue"),
+      "/frontend/vue/": [
+        {
+          text: "Vue",
+          link: "/frontend/vue/",
+        }
+      ],
       "/frontend/react/": [
         {
           text: "React",
           link: "/frontend/react/",
           items: [
             { text: "JSX", link: "/frontend/react/C1/" },
-            { text: "虚拟DOM", link: "/frontend/react/C1/" },
+            { text: "虚拟DOM", link: "/frontend/react/C2/" },
           ],
         }
       ],
-      "/frontend/eventloop/": set_sidebar("/frontend/eventloop"),
-      "/frontend/es6": set_sidebar("/frontend/es6"),
-      "/backend/sql/": set_sidebar("/backend/sql"),
-      "/backend/node/": set_sidebar("/backend/node"),
-      "/backend/python/": set_sidebar("/backend/python"),
-      "/network/http/": set_sidebar("/network/http"),
+      "/frontend/eventloop/": [
+        {
+          text: "事件循环",
+          link: "/frontend/eventloop/",
+          items: [
+            { text: "引言", link: "/frontend/eventloop/" },
+            { text: "JS 异步", link: "/frontend/eventloop/何为异步.md" },
+            { text: "简述事件循环", link: "/frontend/eventloop/简述事件循环.md" },
+            { text: "JS 计时器能够精确运行", link: "/frontend/eventloop/JS 计时器能够精确运行.md" },
+          ],
+        }
+      ],
+      "/frontend/es6/": [
+        {
+          text: "ES6",
+          link: "/frontend/es6/",
+          items: [
+            { text: "引言", link: "/frontend/es6/" },
+            { text: "基本语法", link: "/frontend/es6/C1/" },
+          ],
+        }
+      ],
+      "/backend/sql/": [
+        {
+          text: "SQL",
+          link: "/backend/sql/",
+          items: [
+            { text: "引言", link: "/backend/sql/" },
+            { text: "基本概念", link: "/backend/sql/M0基本概念.md" },
+            { text: "基本语法", link: "/backend/sql/M1基本语法.md" },
+            { text: "分组查询", link: "/backend/sql/M2分组查询.md" },
+            { text: "排序查询", link: "/backend/sql/M3排序查询.md" },
+            { text: "分页查询", link: "/backend/sql/M4分页查询.md" },
+            { text: "约束", link: "/backend/sql/M5约束.md" },
+          ],
+        }
+      ],
+      "/backend/node/": [
+        {
+          text: "NodeJS",
+          link: "/backend/node/",
+        }
+      ],
+      "/network/": [
+        {
+          text: "计算机网络",
+          link: "/network/",
+          items: [
+            { text: "HTTP协议", link: "/network/http/" },
+            { text: "TCP/IP协议", link: "/network/tcpip/" },
+          ]
+        }
+      ],
       "/party/": [
         {
           text: "学习笔记",
@@ -136,14 +190,11 @@ export default defineConfig({
       "/about/": [
         {
           text: "About Me",
+          link: "/about/",
           items: [
-            {
-              text: "关于我",
-              link: "/about/about-me",
-            },
-            {
-              text: "",
-            },
+            { text: "关于本博客", link: "/about/C1/" },
+            { text: "我的爱好", link: "/about/C2/" },
+            { text: "学习历程", link: "/about/C3/" },
           ],
         },
       ],
