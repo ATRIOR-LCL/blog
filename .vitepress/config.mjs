@@ -150,6 +150,7 @@ export default defineConfig({
             { text: "Nest Session 案例", link: "/backend/nest/C4/" },
             { text: "Nest Providers", link: "/backend/nest/C5/" },
             { text: "Nest Module", link: "/backend/nest/C6/" },
+            { text: "Nest Middleware", link: "/backend/nest/C7/" },
           ]
         }
       ],
