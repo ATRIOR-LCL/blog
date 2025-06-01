@@ -3,12 +3,13 @@ import { set_sidebar } from "./utils/auto_slidebar.mjs";
 // import { set_sidebar } from "./utils/auto_slidebar.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/blog/",
   head: [
     [
       "link",
       {
         rel: "icon",
-        href: "/pp.ico",
+        href: "/blog/pp.ico",
       },
     ],
   ],
