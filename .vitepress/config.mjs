@@ -212,6 +212,7 @@ export default defineConfig({
             { text: "Nest Module", link: "/backend/nest/C6/" },
             { text: "Nest Middleware", link: "/backend/nest/C7/" },
             { text: "Nest 文件上传 与 静态目录", link: "/backend/nest/C8/" },
+            { text: "Nest 文件下载 与 文件流", link: "/backend/nest/C9/" },
           ]
         }
       ],
