@@ -213,6 +213,9 @@ export default defineConfig({
             { text: "Nest Middleware", link: "/backend/nest/C7/" },
             { text: "Nest 文件上传 与 静态目录", link: "/backend/nest/C8/" },
             { text: "Nest 文件下载 与 文件流", link: "/backend/nest/C9/" },
+            { text: "Rxjx", link: "/backend/nest/C10/" },
+            { text: "Nest 拦截器", link: "/backend/nest/C11/" },
+            { text: "Nest 管道", link: "/backend/nest/C12/" },
           ]
         }
       ],
