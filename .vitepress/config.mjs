@@ -26,6 +26,7 @@ export default defineConfig({
         items: [
           { text: "党员基础知识", link: "/party/basic/" },
           { text: "操作系统", link: "/os/" },
+          { text: "Git 规范", link: "/git/" },
         ],
       },
       {
