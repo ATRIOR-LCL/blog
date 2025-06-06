@@ -244,3 +244,4 @@ bootstrap();
 ```
 
 - 使用 app.useGlobalPipes() 方法，将 ValidationPipe 创建的实例化对象传入，就可以了。
+- 这样就不需要手写 login.pipe 中的逻辑。
