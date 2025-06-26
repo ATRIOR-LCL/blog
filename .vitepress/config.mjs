@@ -55,6 +55,7 @@ export default defineConfig({
           { text: "vue", link: "/frontend/vue/" },
           { text: "事件循环", link: "/frontend/eventloop/" },
           { text: "ES6", link: "/frontend/es6/" },
+          { text: "TailwindCSS", link: "/frontend/tailwindcss/" },
         ],
       },
       {
@@ -218,6 +219,19 @@ export default defineConfig({
             { text: "Nest 拦截器", link: "/backend/nest/C11/" },
             { text: "Nest 管道", link: "/backend/nest/C12/" },
           ]
+        }
+      ],
+      "/fontend/tailwindcss/": [
+        {
+          text: "TailwindCSS",
+          link: "/frontend/tailwindcss/",
+          items: [
+            { text: "引言", link: "/frontend/tailwindcss/" },
+            { text: "基本语法", link: "/frontend/tailwindcss/C1/" },
+            { text: "配置文件", link: "/frontend/tailwindcss/C2/" },
+            { text: "响应式设计", link: "/frontend/tailwindcss/C3/" },
+            { text: "自定义样式", link: "/frontend/tailwindcss/C4/" },
+          ],
         }
       ],
     },
