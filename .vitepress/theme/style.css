@@ -176,3 +176,32 @@
   padding-top: 24px;
   border: none;
 }
+
+/* 添加首页背景图样式 */
+.VPHome {
+  position: relative;
+}
+
+.VPHome::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/blog/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* 确保内容在背景图之上 */
+.VPHome .VPHero,
+.VPHome .VPFeatures {
+  position: relative;
+  z-index: 1;
+}

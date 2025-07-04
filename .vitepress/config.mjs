@@ -218,6 +218,7 @@ export default defineConfig({
             { text: "Rxjx", link: "/backend/nest/C10/" },
             { text: "Nest 拦截器", link: "/backend/nest/C11/" },
             { text: "Nest 管道", link: "/backend/nest/C12/" },
+            { text: "Nest 守卫", link: "/backend/nest/C13/" },
           ]
         }
       ],
