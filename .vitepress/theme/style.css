@@ -189,14 +189,35 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/blog/bg.png');
+  /* 默认使用小尺寸图片 */
+  background-image: url('/blog/bg-small.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.2;
+  opacity: 0;
   z-index: -1;
   pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* 中等屏幕使用中等尺寸图片 */
+@media (min-width: 768px) {
+  .VPHome::before {
+    background-image: url('/blog/bg-medium.jpg');
+  }
+}
+
+/* 大屏幕使用高质量图片 */
+@media (min-width: 1280px) {
+  .VPHome::before {
+    background-image: url('/blog/bg-optimized.jpg');
+  }
+}
+
+/* 背景图加载完成后显示 */
+.VPHome.bg-loaded::before {
+  opacity: 0.3;
 }
 
 /* 确保内容在背景图之上 */

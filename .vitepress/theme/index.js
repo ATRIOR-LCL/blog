@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './custom.css'
 import Layout from './Layout.vue'
+import { initBackgroundLoader } from './background-loader.js'
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -15,6 +16,14 @@ export default {
   // },
   Layout,
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // 初始化背景图加载器
+    if (typeof window !== 'undefined') {
+      initBackgroundLoader();
+      
+      // 路由变化时重新检查
+      router.onAfterRouteChanged = () => {
+        initBackgroundLoader();
+      };
+    }
   }
 }

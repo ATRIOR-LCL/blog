@@ -12,6 +12,31 @@ export default defineConfig({
         href: "/blog/pp.ico",
       },
     ],
+    // 预加载背景图片资源
+    [
+      "link",
+      {
+        rel: "prefetch",
+        href: "/blog/bg-small.jpg",
+        as: "image",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "prefetch",
+        href: "/blog/bg-medium.jpg",
+        as: "image",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "prefetch",
+        href: "/blog/bg-optimized.jpg",
+        as: "image",
+      },
+    ],
   ],
   title: "ATRIOR's Magic Blog!!!",
   description: "A VitePress Site",
