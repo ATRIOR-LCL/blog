@@ -196,9 +196,11 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0;
+  filter: blur(20px);
+  transform: scale(1.1);
   z-index: -1;
   pointer-events: none;
-  transition: opacity 0.5s ease-in-out;
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 中等屏幕使用中等尺寸图片 */
@@ -215,9 +217,18 @@
   }
 }
 
-/* 背景图加载完成后显示 */
+/* 背景图加载完成后显示 - 从模糊到清晰 */
 .VPHome.bg-loaded::before {
   opacity: 0.3;
+  filter: blur(0px);
+  transform: scale(1);
+}
+
+/* 高清图片加载完成后的效果 */
+.VPHome.bg-hq-loaded::before {
+  opacity: 0.35;
+  filter: blur(0px) brightness(1.05);
+  transform: scale(1);
 }
 
 /* 确保内容在背景图之上 */
@@ -225,4 +236,19 @@
 .VPHome .VPFeatures {
   position: relative;
   z-index: 1;
+}
+
+/* 为低性能设备提供简化动画 */
+@media (prefers-reduced-motion: reduce) {
+  .VPHome::before {
+    transition: opacity 0.8s ease-in-out;
+    filter: none;
+    transform: none;
+  }
+  
+  .VPHome.bg-loaded::before,
+  .VPHome.bg-hq-loaded::before {
+    filter: none;
+    transform: none;
+  }
 }
