@@ -17,23 +17,7 @@ export default defineConfig({
       "link",
       {
         rel: "prefetch",
-        href: "/blog/bg-small.jpg",
-        as: "image",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "prefetch",
-        href: "/blog/bg-medium.jpg",
-        as: "image",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "prefetch",
-        href: "/blog/bg-optimized.jpg",
+        href: "https://cdn.shaly.sdutacm.cn/atrior/images/blog-bg.png",
         as: "image",
       },
     ],

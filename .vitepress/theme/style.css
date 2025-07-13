@@ -189,8 +189,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* 默认使用小尺寸图片 */
-  background-image: url('/blog/bg-small.jpg');
+  /* 使用CDN背景图片 */
+  background-image: url('https://cdn.shaly.sdutacm.cn/atrior/images/blog-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,17 +203,17 @@
   transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 中等屏幕使用中等尺寸图片 */
+/* 中等屏幕使用CDN图片 */
 @media (min-width: 768px) {
   .VPHome::before {
-    background-image: url('/blog/bg-medium.jpg');
+    background-image: url('https://cdn.shaly.sdutacm.cn/atrior/images/blog-bg.png');
   }
 }
 
-/* 大屏幕使用高质量图片 */
+/* 大屏幕使用CDN图片 */
 @media (min-width: 1280px) {
   .VPHome::before {
-    background-image: url('/blog/bg-optimized.jpg');
+    background-image: url('https://cdn.shaly.sdutacm.cn/atrior/images/blog-bg.png');
   }
 }
 

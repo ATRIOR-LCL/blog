@@ -23,23 +23,12 @@ export function initBackgroundLoader() {
 
   // 根据屏幕尺寸选择合适的图片
   const getImageSources = () => {
-    const width = window.innerWidth;
-    if (width >= 1280) {
-      return {
-        primary: '/blog/bg-medium.jpg',
-        highQuality: '/blog/bg-optimized.jpg'
-      };
-    } else if (width >= 768) {
-      return {
-        primary: '/blog/bg-small.jpg',
-        highQuality: '/blog/bg-medium.jpg'
-      };
-    } else {
-      return {
-        primary: '/blog/bg-small.jpg',
-        highQuality: '/blog/bg-medium.jpg'
-      };
-    }
+    // 使用统一的CDN图片地址
+    const cdnUrl = 'https://cdn.shaly.sdutacm.cn/atrior/images/blog-bg.png';
+    return {
+      primary: cdnUrl,
+      highQuality: cdnUrl
+    };
   };
 
   // 延迟加载背景图
@@ -119,15 +108,8 @@ export function initBackgroundLoader() {
         homeElement.classList.add('bg-hq-loaded');
       }
 
-      // 预加载其他尺寸的图片（低优先级）
-      setTimeout(() => {
-        const allSizes = ['/blog/bg-small.jpg', '/blog/bg-medium.jpg', '/blog/bg-optimized.jpg'];
-        allSizes.forEach(src => {
-          if (src !== primary && src !== highQuality) {
-            preloadImage(src).catch(() => {}); // 静默失败
-          }
-        });
-      }, 2000);
+      // 预加载其他尺寸的图片（低优先级） - 现在只有一个CDN图片
+      // 由于使用统一的CDN地址，这里可以简化处理
 
     } catch (error) {
       console.warn('背景图加载过程出错:', error);
