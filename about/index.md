@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-between;width: 100%; height: 60px;align-items: center;">
     <span style="font-size: 30px;">关于我</span>
-    <img src="./images/touxiang.jpg" style="height: 60px;">
+    <img src="https://cdn.shaly.sdutacm.cn/atrior/images/touxiang.jpg" style="height: 60px;">
 </div>
 
 ---
