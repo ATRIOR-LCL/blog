@@ -55,17 +55,9 @@ export default defineConfig({
         ],
       },
       {
-        text: "About Me",
-        items: [
-          { text: "关于本博客", link: "/about/关于本博客" },
-          { text: "我的爱好", link: "/about/我的爱好" },
-          { text: "学习历程", link: "/about/学习历程" },
-        ],
-      },
-      {
         text: "项目合集",
         items: [
-          { text: "CodeForces 选手/比赛 信息爬虫", link: "/" },
+          { text: "CodeForces 选手/比赛 信息爬虫", link: "/project/CodeForcesSpider/" },
           { text: "SDUTOJ 2024 年度报告", link: "/" },
           { text: "SDUT 新生导游程序", link: "/" },
           { text: "OJ3 压力测试脚本", link: "/project/OJ3StressTesting/" },
@@ -190,12 +182,24 @@ export default defineConfig({
           ],
         },
       ],
-      "/project/": [
+      "/project/CodeForcesSpider/": [
         {
-          text: "项目合集",
-          link: "/project/",
+          text: "CodeForces 选手/比赛 信息爬虫",
+          link: "/project/CodeForcesSpider/",
           items: [
-            { text: 'OJ3 压力测试脚本', link: '/project/OJ3StressTesting/' },
+            { text: "项目简介", link: "/project/CodeForcesSpider/" },
+            { text: "前端部分", link: "/project/CodeForcesSpider/C1/" },
+            { text: "后端部分", link: "/project/CodeForcesSpider/C2/" },
+          ]
+        }
+      ],
+      "/project/OJ-Anural-Report/": [
+        {
+          text: "SDUTOJ 2024 年度报告",
+          link: "/project/OJ-Anural-Report/",
+          items: [
+            { text: "项目简介", link: "/project/OJ-Anural-Report/" },
+            { text: "前端部分", link: "/project/OJ-Anural-Report/C1/" },
           ]
         }
       ],
@@ -222,7 +226,6 @@ export default defineConfig({
           items: [
             { text: "关于本博客", link: "/about/C1/" },
             { text: "我的爱好", link: "/about/C2/" },
-            { text: "学习历程", link: "/about/C3/" },
           ],
         },
       ],

@@ -11,7 +11,7 @@ hero:
     alt: 背景图
   actions:
     - theme: brand
-      text: 开始探索！这份尘封已久的回忆！
+      text: 想要了解我？从这里开始 ☕️
       link: /about
     - theme: alt
       text: API 示例
@@ -23,6 +23,6 @@ features:
   - title: Focus 🎯
     details: 全栈开发 / 运维 / 爬虫
   - title: Group 🍀
-    details: SDUTACM / SDUTNEWS
+    details: SDUTACM / SDUTNEWS / RankLand
 ---
 
