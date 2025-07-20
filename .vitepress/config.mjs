@@ -56,7 +56,7 @@ export default defineConfig({
           { text: "vue", link: "/frontend/vue/" },
           { text: "事件循环", link: "/frontend/eventloop/" },
           { text: "ES6", link: "/frontend/es6/" },
-          { text: "TailwindCSS", link: "/frontend/tailwindcss/" },
+          { text: "依赖管理文件", link: "/frontend/package/" },
         ],
       },
       {
@@ -114,6 +114,19 @@ export default defineConfig({
           items: [
             { text: "引言", link: "/frontend/es6/" },
             { text: "基本语法", link: "/frontend/es6/C1/" },
+          ],
+        }
+      ],
+      "/frontend/package/": [
+        {
+          text: "依赖管理文件",
+          link: "/frontend/package/",
+          items: [
+            { text: "引言", link: "/frontend/package/" },
+            { text: "package.json", link: "/frontend/package/C1/index.md" },
+            {
+              text: "package-lock.json", link: "/frontend/package/C2/index.md"
+            },
           ],
         }
       ],
