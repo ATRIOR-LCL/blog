@@ -1,4 +1,26 @@
 {
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "atrior 的个人博客网站",
+  "keywords": [
+    "blog",
+    "技术博客",
+    "前端",
+    "后端",
+    "网络",
+    "操作系统",
+    "学习笔记"
+  ],
+  "author": "ATRIOR-LCL sdutwujinhao@gmail.com",
+  "license": "MIT",
+  "homepage": "https://atrior-lcl.github.io/blog/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATRIOR-LCL/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ATRIOR-LCL/blog/issues"
+  },
   "devDependencies": {
     "vitepress": "^1.6.3"
   },
