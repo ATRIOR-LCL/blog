@@ -270,6 +270,23 @@ export default defineConfig({
           ],
         }
       ],
+      "/frontend/vue/": [
+        {
+          text: "Vue",
+          link: "/frontend/vue/",
+          items: [
+            { text: "引言", link: "/frontend/vue/" },
+            { text:"Class Component", link: "/frontend/vue/C1/" },
+            {text: "Additional Hooks", link: "/frontend/vue/C2/"},
+            { text: "Custom Decorators", link: "/frontend/vue/C3/" },
+            { text: "Extend and Mixins", link: "/frontend/vue/C4/" },
+            { text: "Caveats of Class Component", link: "/frontend/vue/C5/" },
+            { text: "TypeScript Guide", link: "/frontend/vue/C6/" },
+            { text: "Built-in Hook Methods", link: "/frontend/vue/C7/" },
+            { text: "Vue Class Decorator", link: "/frontend/vue/C8/" },
+          ]
+        }
+      ]
     },
     socialLinks: [{ icon: "github", link: "https://github.com/ATRIOR-LCL" }],
     footer: {
